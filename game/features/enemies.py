@@ -34,6 +34,8 @@ class Enemies(Feature):
         game = self.game
         enemy.data["hp"] -= damage
         if enemy.data["hp"] > 0:
+            enemy.set_color((255, 255, 255))
+            game.after(0.1, lambda: enemy.set_color((180, 45, 40)))
             return
 
         game.spawn_particles(enemy.x, 1.0, enemy.z, color=(255, 120, 40), count=16, speed=4.0)
