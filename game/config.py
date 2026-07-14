@@ -12,9 +12,9 @@ CONFIG = FPSConfig(
     max_health=100,
     start_ammo=40,
     # 見 た目のテーマ
-    floor_colors=((42, 42, 44), (52, 48, 43)),
-    wall_colors=((96, 82, 76), (126, 108, 90)),
-    lamp_color=(255, 214, 120),
+    floor_colors=((207, 237, 240), (207, 237, 240)),
+    wall_colors=((238, 213, 255), (238, 213, 255)),
+    lamp_color=(238, 213, 255),
 )
 JUMP_VELOCITY = 5.2  # 跳ぶ初速
 GRAVITY = 13.0  # 重力加速度
